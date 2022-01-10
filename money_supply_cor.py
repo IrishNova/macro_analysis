@@ -10,7 +10,7 @@ on how the M2 money supply relates to the S&P 500, GDP, Home Prices, and for goo
 mortgage rate as that's probably the most important rate to the consumer.  
 """
 
-api_key = f'<YOUR_KEY_GOES_HERE>'
+api_key = f'24161bd3b6c8e703d5a751d151bc4cf9'
 fred = Fred(api_key=api_key)
 
 
@@ -51,7 +51,7 @@ def graphic(data, save=False):
     if save is False:
         plt.show()
     else:
-        plt.savefig("Money & Rates")
+        plt.savefig("Money & assets")
     plt.clf()
 
 
