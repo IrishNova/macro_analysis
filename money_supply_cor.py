@@ -10,7 +10,7 @@ on how the M2 money supply relates to the S&P 500, GDP, Home Prices, and for goo
 mortgage rate as that's probably the most important rate to the consumer.  
 """
 
-api_key = f'24161bd3b6c8e703d5a751d151bc4cf9'
+api_key = f'<YOUR_KEY_HERE>'
 fred = Fred(api_key=api_key)
 
 
