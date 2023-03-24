@@ -48,10 +48,11 @@ def graphic(data, save=False):
     plt.figure(facecolor='darkgrey')
     sns.heatmap(data=d)
     plt.title("Correlation between M2 Money Supply & Other Indicators", fontsize=20, x=.6, y=1.05)
-    if save is False:
-        plt.show()
-    else:
+    if save:
         plt.savefig("Money & assets")
+
+    else:
+        plt.show()
     plt.clf()
 
 
@@ -84,10 +85,10 @@ def normalized_graph(data, save=False):
     ax = sns.lineplot(data=df)
     ax.set(yticklabels=[], xlabel="By Quarter", ylabel="Normalized Data")
     plt.title("Normalized Metrics by Quarter", fontsize=20, y=1.05)
-    if save is False:
-        plt.show()
-    else:
+    if save:
         plt.savefig("normalized graph")
+    else:
+        plt.show()
 
 
 if __name__ == "__main__":
